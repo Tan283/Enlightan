@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/totalD.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <img src='{% static "img/Rectangle 58 (2).png" %}' class="upr">
+    <h1 id="mon">บทสวดวันสำคัญทางศาสนา</h1>
+    <img src='{% static "img/Group 6 (1).png" %}' class="pra">
+    <a  href="/main"><h1 id="etan">EnlighTan</h1></a>
+    
+    <a href="/viewProfile"><button id="log">ดูโปรไฟล์</button></a>
+    
+    <a  href="{% url 'set' title=ok n=1 %}"><button  id="p1">{{ok}}</a>
+        <a  href="{% url 'set' title=khao n=1 %}"><button  id="p2">{{khao}}</a>
+        <a  href="{% url 'set' title=maka n=1 %}"><button  id="p3">{{maka}}</a>
+        <a  href="{% url 'set' title=visaka n=1 %}"><button  id="p4">{{visaka}}</a>
+        <a  href="{% url 'set' title=asa n=1 %}"><button  id="p5">{{asa}}</a>
+        <a  href="{% url 'set' title=atha n=1 %}"><button  id="p6">{{atha}}</a>
+    
+
+    
+    
+    {% else %}
+    <meta http-equiv="REFRESH" content="0;/signIn">
+    {% endif %}
+</body>
+</html>

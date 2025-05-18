@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href ="{% static 'css/7day.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% if user.is_authenticated %}
+    
+    <img src="{% static 'img/Rectangle 58 (3).png' %}" class="upr">
+    <h1 id="mon">บทสวดประจำวันเกิด</h1>
+    <img src="{% static 'img/Rectangle 78.svg' %}" class="pra">
+    <img src="{% static 'img/dokmai 1.svg' %}" id="dok1" alt="">
+    <img src="{% static 'img/dokmai 2 (1).svg' %}" id="dok2" alt="">
+
+    <a  href="/main"><h1 id="etan">EnlighTan</h1></a>
+    <a href="/viewProfile"><button id="log">ดูโปรไฟล์</button></a>
+
+    <a  href="{% url 'set' title=monday n=1 %}"><button id="p1">{{monday}}</a>     
+    <a  href="{% url 'set' title=tuesday n=1 %}"><button id="p2">{{tuesday}}</a>     
+    <a  href="{% url 'set' title=wednesday n=1 %}"><button id="p3">{{wednesday}}</a>     
+    <a  href="{% url 'set' title=thursday n=1 %}"><button id="p4">{{thursday}}</a>     
+    <a  href="{% url 'set' title=friday n=1 %}"><button  id="p5">{{friday}}</a>     
+    <a  href="{% url 'set' title=saturday n=1 %}"><button id="p6">{{saturday}}</a>     
+    <a href="{% url 'set' title=sunday n=1 %}"><button  id="p7">{{sunday}}</a>
+
+
+    
+    
+    {% else %}
+    <meta http-equiv="REFRESH" content="0;/signIn">
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,268 @@
+body{
+    position: relative;
+    width: 1253px;
+    height: 705px;
+
+    padding: 0;
+    margin: 0;
+
+    background: #A5A58D;
+}
+
+input{
+    font-size: 20 px;
+    padding-left: 18px;
+}
+
+input:focus, textarea{
+    outline: none;
+}
+
+/* l > div{
+    position: absolute;
+    width: 345px;
+    height: 60px;
+    left: 90px;
+    top: 95px;
+    background-color:#000000;
+    color:#FFF6C4;
+} */
+
+.title {
+    position: absolute;
+    left: 7.0%;
+    right: 75.1%;
+    top: 50px;
+    /* bottom: 86.1%; */
+
+    font-family: 'Noto Serif SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.125em;
+
+    color: #FFE454;
+    
+    /* อยากให้กรอบมันเป็ฯ outter line อ่ะ ตอนนี้เหมือนเป้น inner line */
+    -webkit-text-stroke: 1px #C5BAA2;
+
+    text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.38);
+}
+
+#signin{    
+    position: absolute;
+    width: 40%;
+    height: 48px;
+    left: 50.5%;
+    top: 77px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+h4{
+    position: absolute;
+    width: 273px;
+    height: 33px;
+    left: 54.0%;
+    top: 127px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.signin{
+    position: absolute;
+    width: 146.46px;
+    height: 33px;
+    left: 75.0%;
+    top: 157px;
+
+    font-family: 'Inter','sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #4978BE;
+}
+
+.signin:hover{
+    color: #4978BE;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.quote{
+    position: absolute;
+    width: 345px;
+    height: 351px;
+    left: 105px;
+    top: 205px;
+
+    font-family: 'noto sans Thai','Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFF6C4
+}
+
+.quoteBG{
+    position: absolute;
+    width: 530px;
+    height: 705px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(180deg, #DD9E24 -25.73%, 
+                rgba(97, 87, 76, 0.961253) -25.72%,
+                rgba(217, 159, 90, 0.61) 104.9%);
+}
+
+.fillin-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 17px;
+
+    position: absolute;
+    width: 735px;
+    height: 173px;
+    left: 515px;
+    top: 240px;
+}
+
+.fillin-container > form > div .name{
+    position: absolute;
+    width: 127px;
+    height: 22px;
+    left: 153.5px;
+    top: 0px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #000000;
+}
+
+#username{
+    position: absolute;
+    width: 431px;
+    height: 40px;
+    left: 153.5px;
+    top: 38px;
+    padding-left: 18px;
+    font-size: 20px;
+
+    background: #E1E1E1;
+    border-radius: 8px;
+    border: none;
+}
+
+.fillin-container > form > div .pass{
+    position: absolute;
+    width: 127px;
+    height: 22px;
+    left: 153.5px;
+    top: 95px;
+    
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+#password{
+    position: absolute;
+    width: 431px;
+    height: 40px;
+    left: 153.5px;
+    top: 133px;
+    padding-left: 18px;
+    font-size: 20px;
+
+    background: #E1E1E1;
+    border-radius: 8px;
+    border:none;
+}
+
+.fillin-container > form > div > button {   
+    position: absolute;
+    width: 148.74px;
+    height: 40px;
+    left: 311px;
+    top: 257px;
+    padding-left: 35px;
+
+    background: #524F4D;
+    border-radius: 8px;
+
+    font-family: 'Inter', 'san-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #B7B7A4;
+
+    border: none;
+}
+
+.fillin-container > form > div > button:hover {   
+    color:antiquewhite;
+    position: absolute;
+    width: 150.74px;
+    height: 42px;
+    left: 310px;
+    top: 256px;
+    padding-left: 36px;
+
+    background: #524F4D;
+    border-radius: 8px;
+
+    font-family: 'Inter', 'san-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #B7B7A4;
+
+    border: none;
+}

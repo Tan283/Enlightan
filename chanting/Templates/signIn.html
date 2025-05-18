@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href ="{% static 'css\signIn.css' %}">
+    <!-- add font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+        {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+        {% endfor %}
+    {% endif %}
+    <div class="quoteBG"></div>
+
+    <div class="quote">" ความรู้  
+        <br>อาจใช้เวลาสะสม 
+        <br>เพียงไม่กี่วันก็มีได้ 
+        <br>ความมีสติ 
+        <br>ใช้เวลาสะสมทั้งชีวิต
+        <br>  ก็ไม่แน่ว่าจะมี "
+    </div>
+
+    <a  href="/main"><h1 class="title">EnlighTan</h1></a>
+
+    <!-- <a class="homepage" href="main.html">
+        <div>ssssssss</div>
+    </a> -->
+        
+    <h1 id="signin"><b>Sign in to your Account</b></h1>
+
+    <div class="gradient"></div>
+
+    <h4>Do not have an account?</h4>
+    
+    <a class="signin" href="/signUp">Sign up now</a>
+
+    <div class="fillin-container">
+        <form action="/signIn/" method="POST">
+            {% csrf_token %}
+        
+            <div>
+                <label class="name" for="username">Username</label><br>
+                <input type = "text" id = "username" name = "username" placeholder = "Enter your name here" required maxlength="30">
+            </div>
+
+            <div>
+                <label class="pass" for="password">Password</label><br>
+                <input type = "password" id = "password" name = "password" placeholder = "Enter your password" required maxlength="12">
+            </div>
+
+            <div>
+                <button class="sub" type="submit">Sign In</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

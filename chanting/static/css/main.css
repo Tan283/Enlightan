@@ -1,0 +1,355 @@
+/* * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background: #A5A58D;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Serif SC', serif;
+/* 
+    background: url(IMG_2003.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+
+}
+
+bg{
+    width: 100%;
+    max-width:1920px;
+    object-fit: cover;
+}
+
+/* EnlighTan */
+h1{      
+    position: absolute;
+    left: 3.35%;
+    right: 75.1%;
+    top: 0.02%;
+    bottom: 86.1%;
+
+    font-family: 'Noto Serif SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.125em;
+
+    color: #FFE454;
+    
+    /* อยากให้กรอบมันเป็ฯ outter line อ่ะ ตอนนี้เหมือนเป้น inner line */
+    -webkit-text-stroke: 1px #C5BAA2;
+
+    text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.38);
+    
+}
+
+/*login button*/
+.loginbut{
+    font-family: 'Noto Sans Thai','Kanit','sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #504C45;
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    left: 86%;
+    top: 64px;
+        
+    background: rgba(252, 244, 200, 0.26);
+    border-radius: 32px;
+
+    border-style: none;
+    
+}
+
+.loginbut:hover{
+    background:rgba(245, 245, 220, 0.625);
+}
+
+/* view profile button */
+.viewprofile{
+    font-family: 'Noto Sans Thai','Kanit','sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #504C45;
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    left: 86%;
+    top: 64px;
+        
+    background: rgba(252, 244, 200, 0.26);
+    border-radius: 32px;
+
+    border-style: none;
+    
+}
+
+.viewprofile:hover{
+    background:rgba(245, 245, 220, 0.625);
+}
+
+.toprectangle{
+    position: absolute;
+    width: 1253px;
+    height: 106px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(180deg, #838E98 4.86%, rgba(165, 165, 141, 0) 99.1%);
+}
+
+.say{
+    position: absolute;
+    width: 1253px;
+    height: 125px;
+    left: 25%;
+    top: 213px;
+    
+    
+    font-family: 'Noto Sans Thai', 'sans-serif';
+    font-style: normal;
+    font-size: 80px;
+    line-height: 97px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.54);
+}
+
+.midrectangle{
+    border: none;
+    position: absolute;
+    width: 1253px;
+    height: 72px;
+    left: 0px;
+    top: 61%;
+
+    background: linear-gradient(180deg, rgba(165, 165, 141, 0) 4.86%, #A5A58D 196.53%);
+}
+
+/* auto layout*/
+.flex-option-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    gap: 52px;
+
+    position: absolute;
+    width: 100%;
+    height: 263px;
+    left: 0px;
+    top: 445px;
+
+}
+
+/*important date*/
+.flex-option-container .important .icon{
+    position: absolute;
+    width: 200px;
+    left: calc(50% - 201px/2 - 251.98px);
+    right: 71.99%;
+    top: 3.9%;
+    bottom: 63.46%;
+    /* background: url(src\IMG_2003_cropped.jpg); */
+
+}
+
+.flex-option-container .important .icon > img{
+    max-width: 96;
+    width: 47%;
+}
+
+.flex-option-container .important .topic{
+    position: absolute;
+    width: 220px;
+    height: 29px;
+    left: calc(50% - 201px/2 - 303.98px);
+    top: calc(50% - 29px/2 + 1.88px);
+
+    font-family: 'Noto Sans Thai','Kanit', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #FFFFFF;
+
+}
+
+.flex-option-container .important .description{
+    position: absolute;
+    width: 210px;
+    height: 83px;
+    left: calc(50% - 201px/2 - 308.5px);
+    top: 150.88px;
+
+    font-family: 'Noto Sans Thai','Kanit', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.8;
+}
+
+.flex-option-container .important:hover .topic {
+    color: #504C45;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flex-option-container .important:hover .description {
+    color: #504C45;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flex-option-container .important:hover .icon{
+    -webkit-filter:invert(0.8);
+   
+}
+
+/*daily*/
+.flex-option-container .daily .icon{
+    position: absolute;
+    left: calc(50% - 201px/2 + 50px);
+    right: 47.09%;
+    top: 3.9%;
+    bottom: 61.18%;
+
+}
+
+
+.flex-option-container .daily .topic{
+    position: absolute;
+    width: 240px;
+    height: 29px;
+    
+    left: calc(50% - 241px/2 - 1.98px);
+    top: calc(50% - 29px/2 + 1.88px);
+
+    font-family: 'Noto Sans Thai','Kanit', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+    
+}
+
+.flex-option-container .daily .description{
+    position: absolute;
+    width: 199px;
+    height: 83px;
+    left: calc(50% - 201px/2 - 1.98px);
+    top: 150.88px;
+
+    font-family: 'Noto Sans Thai','Kanit', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.8;
+   
+}
+
+.flex-option-container .daily:hover .topic {
+    color: #504C45;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flex-option-container .daily:hover .description {
+    color: #504C45;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flex-option-container .daily:hover .icon{
+    -webkit-filter:invert(0.8);
+}
+
+/*others*/
+.flex-option-container .others .icon{
+    position: absolute;
+    width: 71.98px;
+    height: 73px;
+    left: calc(50% - 164px/2 + 355.5px);
+    top: calc(50% - 29px/2 - 50px);
+}
+
+.flex-option-container .others .topic{
+    position: absolute;
+    width: 190px;
+    height: 29px;
+    left: calc(50% - 164px/2 + 297.5px);
+    top: calc(50% - 29px/2 + 2px);
+
+    font-family: 'Noto Sans Thai','Kanit', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+
+.flex-option-container .others .description{
+    position: absolute;
+    width: 190px;
+    height: 83px;
+    left: calc(50% - 164px/2 + 297.5px);
+    top: 150.88px;
+
+    font-family: 'Noto Sans Thai','Kanit', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.8;
+}
+
+.flex-option-container .others:hover .topic {
+    color: #504C45;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flex-option-container .others:hover .description {
+    color: #504C45;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flex-option-container .others:hover .icon{
+    -webkit-filter:invert(0.8);
+}

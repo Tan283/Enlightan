@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="{% static 'css/suadPrajum.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <img src="{% static 'img/Rectangle 60.png' %}" class="upr">
+    <img src="{% static 'img/Group 3.png' %}" class="pra">
+    <a  href="/main"><h1 class="title">EnlighTan</h1></a>
+
+    <a href="/viewProfile"><button id="log">ดูโปรไฟล์</button></a>
+
+    <input type="button" value="คำบูชาพระ" id="p1">
+    <input type="button" value="สรรเสริญพระพุทธเจ้า" id="p2">
+    <input type="button" value="อาราธนาศีล5" id="p3">
+    <input type="button" value="ศีล" id="p4">
+    <input type="button" value="ศีลsdf" id="p5">
+    <input type="button" value="ศีลsdfa" id="p6">
+    <input type="button" value="ศีลsdfa" id="p7">
+    <input type="button" value="ศีลsdfa" id="p8">
+    <input type="button" value="ศีลsdfa" id="p9">
+    <h1 id="mon">บทสวดประจำ{{day}}</h1>
+    <script>
+        var staticURL = "{% static '' %}";
+        function getStatic (URL) {
+            let fullURL = staticURL + URL;
+            return fullURL;
+        };
+    </script>
+    <img src='{% static "img/star.svg" %}' name="1" id ="dowB1" onclick="if(getElementById('dowB1').name=='1'){getElementById('dowB1').src = getStatic('img/Star 3.png');getElementById('dowB1').name='2'}else{ getElementById('dowB1').src=getStatic('img/star.svg');getElementById('dowB1').name='1'};">
+    <img src="{% static 'img/star.svg' %}" name="1" id ="dowB2" onclick="if(getElementById('dowB2').name=='1'){getElementById('dowB2').src = getStatic('img/Star 3.png');getElementById('dowB2').name='2'}else{ getElementById('dowB2').src=getStatic('img/star.svg');getElementById('dowB2').name='1'};">
+    <img src="{% static 'img/star.svg' %}" name="1" id ="dowB3" onclick="if(getElementById('dowB3').name=='1'){getElementById('dowB3').src = getStatic('img/Star 3.png');getElementById('dowB3').name='2'}else{ getElementById('dowB3').src=getStatic('img/star.svg');getElementById('dowB3').name='1'};">
+    <img src="{% static 'img/star.svg' %}" name="1" id ="dowB4" onclick="if(getElementById('dowB4').name=='1'){getElementById('dowB4').src = getStatic('img/Star 3.png');getElementById('dowB4').name='2'}else{ getElementById('dowB4').src=getStatic('img/star.svg');getElementById('dowB4').name='1'};">
+    <img src="{% static 'img/star.svg' %}" name="1" id ="dowB5" onclick="if(getElementById('dowB5').name=='1'){getElementById('dowB5').src = getStatic('img/Star 3.png');getElementById('dowB5').name='2'}else{ getElementById('dowB5').src=getStatic('img/star.svg');getElementById('dowB5').name='1'};">
+    <img src="{% static 'img/star.svg' %}" name="1" id ="dowB6" onclick="if(getElementById('dowB6').name=='1'){getElementById('dowB6').src = getStatic('img/Star 3.png');getElementById('dowB6').name='2'}else{ getElementById('dowB6').src=getStatic('img/star.svg');getElementById('dowB6').name='1'};">
+    <img src="{% static 'img/star.svg' %}" name="1" id ="dowB7" onclick="if(getElementById('dowB7').name=='1'){getElementById('dowB7').src = getStatic('img/Star 3.png');getElementById('dowB7').name='2'}else{ getElementById('dowB7').src=getStatic('img/star.svg');getElementById('dowB7').name='1'};">
+    <img src="{% static 'img/star.svg' %}" name="1" id ="dowB8" onclick="if(getElementById('dowB8').name=='1'){getElementById('dowB8').src = getStatic('img/Star 3.png');getElementById('dowB8').name='2'}else{ getElementById('dowB8').src=getStatic('img/star.svg');getElementById('dowB8').name='1'};">
+    <img src="{% static 'img/star.svg' %}" name="1" id ="dowB9" onclick="if(getElementById('dowB9').name=='1'){getElementById('dowB9').src = getStatic('img/Star 3.png');getElementById('dowB9').name='2'}else{ getElementById('dowB9').src=getStatic('img/star.svg');getElementById('dowB9').name='1'};">
+    
+    {% else %}
+    <h1 id="noti">กรุณาเข้าสู่ระบบ</h1>
+    <a href="/signIn"><button class="loginbut">เข้าสู่ระบบ</button></a>
+    {% endif %}
+</body>
+</html>

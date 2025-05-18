@@ -1,0 +1,429 @@
+:root{
+    --accent:#FFFFFF;
+    --accentHover:#DE7941;
+    --transition: all 0.3s ease 0s;
+}
+html,body{
+    height: 100%;
+    overflow: auto;
+}
+
+.upr{
+    position: absolute;
+    width: 1253px;
+    height: 208px;
+    left: 0px;
+    top: 0px;
+}
+
+
+.pra{
+    position: absolute;
+    width: 1253px;
+    height: 507px;
+    left: 0px;
+    top: 198px;
+
+
+}
+#log{
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    left: 1070px;
+    top: 48px;
+    border-radius: 30pt;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 8px 25px;
+    transition: var(--transition);
+    font-family:'Noto Sans Thai';
+}
+#log:hover{
+    color: var(--accentHover);
+}
+
+#dok1{
+    position: absolute;
+    width: 154px;
+    height: 274px;
+    left: 1032px;
+    top: 143px;
+}
+#dok2{
+        
+    position: absolute;
+    width: 154px;
+    height: 274px;
+    left: 72px;
+    top: 143px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 38px;
+    
+    position: absolute;
+    width: 1124px;
+    height: 170px;
+    left: 84px;
+    top: 432px;
+    
+}
+
+.cl1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 52px;
+    
+    width: 830px;
+    height: 66px;
+    top:0px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 52px;
+    width: 830px;
+    height: 66px; */
+}
+
+.cl2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 52px;
+
+    top:104px;
+    width: 1124px;
+    height: 66px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#p1{
+    position: absolute;
+    width: 242px;
+    height: 66px;
+    left: 200px;
+    top: 400px;
+
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    position: absolute;
+    width: 242px;
+    height: 66px;
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family:'Noto Sans Thai';
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+#p1:hover{
+    background: rgba(230, 201, 158, 0.94);
+}
+#p2{
+
+    position: absolute;
+    width: 242px;
+    height: 66px;
+    left: 494px;
+    top: 400px;
+
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+     position: absolute;
+    width: 242px;
+    height: 66px;
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; 
+}
+#p2:hover{background: rgba(230, 201, 158, 0.94);
+}
+#p3{
+
+    position: absolute;
+    width: 242px;
+    height: 66px;
+    left: 788px;
+    top: 400px;
+
+    background: rgba(255, 232, 214, 0.97);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+
+     width: 242px;
+    height: 66px;
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; 
+}
+#p3:hover{background: rgba(230, 201, 158, 0.94);
+}
+#p4{
+
+    position: absolute;
+    width: 242px;
+    height: 66px;
+    left: 40px;
+    top: 550px;
+    
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px; 
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; 
+    /* position: absolute;
+    left:650px;
+    top: 380px;
+    width: 242px;
+    height: 66px;
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; */
+}
+#p4:hover{background: rgba(230, 201, 158, 0.94);
+}
+#p5{
+    position: absolute;
+    width: 242px;
+    height: 66px;
+    left: 340px;
+    top: 550px;
+
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; 
+    /* position: absolute;
+    left:650px;
+    top: 500px;
+    width: 242px;
+    height: 66px;
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; */
+}
+#p5:hover{background: rgba(230, 201, 158, 0.94);
+}
+#p6{
+
+    position: absolute;
+    width: 242px;
+    height: 66px;
+    left: 640px;
+    top: 550px;
+    
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; 
+    /* position: absolute;
+    left:650px;
+    top: 620px;
+    width: 242px;
+    height: 66px;
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; */
+}
+
+#p6:hover{background: rgba(230, 201, 158, 0.94);
+}
+#p7{
+    position: absolute;
+    width: 242px;
+    height: 66px;
+    left: 940px;
+    top: 550px;
+    
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; 
+    /* position: absolute;
+    left:950px;
+    top: 380px;
+    width: 242px;
+    height: 66px;
+    background: rgba(255, 232, 214, 0.94);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex; */
+}
+
+#p7:hover{background: rgba(230, 201, 158, 0.94);
+}
+
+
+
+
+
+#etan{      
+    position: absolute;
+    left: 3.35%;
+    right: 75.1%;
+    top: 0.02%;
+    bottom: 86.1%;
+
+    font-family: 'Noto Serif SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.125em;
+
+    color: #FFE454;
+    
+    /* อยากให้กรอบมันเป็ฯ outter line อ่ะ ตอนนี้เหมือนเป้น inner line */
+    -webkit-text-stroke: 1px #C5BAA2;
+
+    text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.38);
+    
+}
+
+#mon{
+    position: absolute;
+    width: 1250px;
+    height: 86px;
+    left: 0px;
+    top: 80px;
+    color: #463C35;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}

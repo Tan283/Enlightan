@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href ="{% static 'css/signUp.css' %}">
+<!-- add font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+        {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+        {% endfor %}
+    {% endif %}
+    <div class="quoteBG"></div>
+    
+    <h1 id="newAc"><b>Create an account</b></h1>
+
+    <div class="quote">" จะรู้ไปทำไมกับเรื่องไม่เป็นเรื่อง
+        <br>รู้แล้วได้ประโยชน์อะไร
+        <br>เรื่องของตัวเองทำไมไม่อยากรู้
+        <br>ทำไมถึงอยากรู้เรื่องของคนอื่น "
+        <div>-หลวงปู่ผาง ปริปุณโณ-</div>
+    </div>
+
+    <a href="/main"><h1 class="title">EnlighTan</h1></a>
+
+    <h4>Already joined?</h4>
+
+    <a class="signin" href="/signIn">Sign in now</a>
+
+    <div class="flex-container">
+        <form action="/signUp/", method = 'POST'>
+            {% csrf_token %}
+            <div>
+                <label class="user" for="username">Username</label>
+                <input type = "text" id = "username" name = "username" placeholder = "Enter your name here" required maxlength="30">
+            </div>
+
+            <div>
+                <label class="email" for="mail" >Email Address</label>
+                <input type="email" id="mail" name="mail" placeholder="EnlighTan@gmail.com" required>
+            </div>
+
+            <div>
+                <label class="pass" for="password">Password</label>
+                <input type = "password" id = "password" name = "password" placeholder = "Enter your password (8-12 characters)" required minlength="8" maxlength="12">
+            </div>
+
+            <div>
+                <label class="conpass" for="conpassword">Confirmed Password</label>
+                <input type = "password" id = "conpassword" name = "conpassword" placeholder = "Enter your password again" required minlength="8" maxlength="12">
+            </div>
+
+            <div>
+                <label class="agree" for="agreement">Accepted terms and agreement</label>
+                <input type = "checkbox" id = "agreement" name = "agreement" required>
+            </div>
+
+            <div>
+                <button class="sub" type="submit">Sign me up</button>
+            
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

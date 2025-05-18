@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnlighTan</title>
+    <link rel="stylesheet" href ="{% static 'css/chanting.css' %}">
+<!-- add font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <a  href="/main"><h1>EnlighTan</h1></a>
+
+    <div>
+        {% if user.is_authenticated %}
+
+        <!-- ปุ่มดูหน้าโปรไฟล์ -->
+        <a href="/viewProfile"><button class="viewprofile">ดูโปรไฟล์</button></a>
+        {% else %}
+        <!-- ปุ่มเข้าสู่ระบบ -->
+        <a href="/signIn"><button class="loginbut">เข้าสู่ระบบ</button></a>
+        {% endif %}
+    </div>
+
+    <div class="chantingName">{{title}}</div>
+
+    <div class="chantingBox"></div>
+
+    <div class="chantingSay" behavior="scroll" direction="up"> {{content}}</div>
+
+    <a href="/set/บทสวดทั้งหมด/1"><button class="previous">ย้อนกลับ</button></a>
+
+</body>
+</html>
